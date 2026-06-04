@@ -1,11 +1,52 @@
-Thanks for helping make the Parity ecosystem more secure. Security is one of our top priorities.
+# Security Policy
 
-# Reporting a vulnerability
+Parity Technologies is committed to resolving security vulnerabilities in our
+software quickly and carefully. We take the necessary steps to minimize risk,
+provide timely information, and deliver vulnerability fixes and mitigations
+required to address security issues.
 
-If you find something that can be treated as a security vulnerability, please do not use the issue tracker or discuss it in the public forum/channels, as it can cause more damage rather than giving real help to the ecosystem.
+## Sourcing Security Information
 
-Security vulnerabilities should be reported using [this contact form](https://security-submission.parity.io/).
+The [Polkadot Security Hub](https://security.parity.io/) is a resource for all
+things security in the Polkadot ecosystem. You can discover [Security
+Vulnerabilities Disclosures](https://security.parity.io/disclosures), learn
+in detail about
+[Common Security Vulnerabilities](https://security.parity.io/top),
+find information on
+[how to securely test your Polkadot project](https://security.parity.io/tools),
+what [audits](https://security.parity.io/audits) have been conducted, and how
+to get involved in the security of Polkadot.
 
-If you think that your report might be eligible for the Bug Bounty Program, please mark this during the submission. Please check up-to-date [Parity Bug Bounty Program rules](https://www.parity.io/bug-bounty) for more information about our Bug Bounty Program.
+## Responsible Investigation and Reporting
 
-**Warning:** This is an unified `SECURITY.md` file for the Paritytech GitHub Organization. The presence of this file does not mean that this repository is covered by the Bug Bounty program. Please always check the Bug Bounty Program scope for the information.
+Responsible investigation and reporting includes, but isn't limited to, the
+following:
+
+- Initially report the bug only to us and not to anyone else.
+- Give us a reasonable amount of time to fix the bug before disclosing without
+  authorization, as rewards are not paid before a fix as been created and
+  deployed.
+- Don’t make repeat submissions of low quality, rejected or automated
+  vulnerability reports. You will put yourself at risk of being banned
+  permanently.
+- Don’t defraud or harm Parity Technologies or Polkadot or its users during
+  your research; you should make a good faith effort to not interrupt or
+  degrade our and the network's services. Investigate and report bugs
+  in a way that makes a reasonable, good faith effort not to be disruptive or
+  harmful to us or our users. Otherwise, your actions might be interpreted as
+  an attack rather than an effort to be helpful.
+- Don't target our physical security measures, or attempt to use social
+  engineering, spam, distributed denial of service (DDOS) attacks, etc.
+- Don't violate the privacy of other users, destroy data, etc.
+
+### Parity's Bug Bounty Program
+
+Parity's Bug Bounty Program allows us to recognize and reward members of the
+Polkadot ecosystem for helping us find and address significant bugs, in
+accordance with the terms of the program. Submission to the program WILL only
+be considered if it's done through the form link specified in the program
+website.
+
+A detailed description of scope, eligibility, rewards, legal information and
+terms & conditions for contributors can be found on
+[Parity's website](https://parity.io/bug-bounty).
