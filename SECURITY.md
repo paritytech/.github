@@ -1,9 +1,16 @@
 # Security Policy
 
+Unless a specific release states otherwise, these repositories have not received a full security audit.
+
+Use of this repository in production or production-like deployments, should only happen after an independent security review of the relevant code, configuration, generated output, and deployment environment.
+
 Parity Technologies is committed to resolving security vulnerabilities in our
 software quickly and carefully. We take the necessary steps to minimize risk,
 provide timely information, and deliver vulnerability fixes and mitigations
 required to address security issues.
+
+Even where a particular Parity-operated mainnet or production deployment does not yet exist, this code may be used by third parties on live networks or reused in future production contexts once published.
+
 
 ## Sourcing Security Information
 
