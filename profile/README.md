@@ -1,144 +1,61 @@
 # Parity Technologies
 
-Parity Technologies develops open-source software that advances Polkadot and decentralised infrastructure.
+Parity develops open-source software for Polkadot and decentralized infrastructure.
 
-Our work spans protocol engineering, blockchain development, smart-contract tooling and new ways to make decentralised applications easier to build and use.
+Our GitHub repositories contain core protocol engineering, SDKs, libraries, developer tooling, and experimental infrastructure used across the Polkadot ecosystem.
 
-This GitHub organisation contains projects spanning core Polkadot infrastructure, developer tooling, application development and emerging decentralised technologies.
+## Start building
 
-## Start here
+If you're building on Polkadot, start with the [Polkadot Developer Docs](https://docs.polkadot.com/).
 
-Not sure which repository you need?
+| I want to… | Start building | Understand the project | API / reference |
+| --- | --- | --- | --- |
+| Build an application with TypeScript | [App development docs](https://docs.polkadot.com/apps/) | [Product SDK](https://github.com/paritytech/product-sdk) | [Product SDK API](https://paritytech.github.io/product-sdk/) |
+| Build a smart contract with Solidity | [Smart contract docs](https://docs.polkadot.com/smart-contracts/get-started/) | [Revive](https://github.com/paritytech/revive) | [Revive reference](https://paritytech.github.io/revive/) |
+| Build a runtime or parachain | [Parachain development docs](https://docs.polkadot.com/reference/parachains/) | [Polkadot SDK](https://github.com/paritytech/polkadot-sdk) | [Polkadot SDK reference](https://paritytech.github.io/polkadot-sdk/) |
 
-| I want to… | Start with |
-|---|---|
-| Build a runtime, chain or parachain | [`paritytech/polkadot-sdk`](https://github.com/paritytech/polkadot-sdk) |
-| Build an application with TypeScript | [`paritytech/product-sdk`](https://github.com/paritytech/product-sdk) |
-| Create, build and deploy a Playground application | [`paritytech/playground-cli`](https://github.com/paritytech/playground-cli) |
-| Build with Solidity on Polkadot | [`paritytech/revive`](https://github.com/paritytech/revive) |
-| Query a Polkadot SDK-based network through REST | [`paritytech/polkadot-rest-api`](https://github.com/paritytech/polkadot-rest-api) |
-| Explore decentralised data storage | [`paritytech/polkadot-bulletin-chain`](https://github.com/paritytech/polkadot-bulletin-chain) |
-| Explore emerging storage infrastructure | [`paritytech/web3-storage`](https://github.com/paritytech/web3-storage) |
-| Integrate applications with desktop, mobile or browser hosts | [`paritytech/host-rust-core`](https://github.com/paritytech/host-rust-core) |
-| Explore trustless application discovery and access | [`paritytech/dotli-community`](https://github.com/paritytech/dotli-community) |
+## How the documentation fits together
 
-## Core Polkadot engineering
+**Start building → canonical docs**
 
-### [`polkadot-sdk`](https://github.com/paritytech/polkadot-sdk)
+[docs.polkadot.com](https://docs.polkadot.com/) is the starting point for tutorials, concepts, code examples, and hands-on guidance.
 
-The Polkadot SDK contains the components used to build Polkadot runtimes, chains, parachains and supporting infrastructure.
+**Understand the project → repository**
 
-Start here if you are working on runtime development, protocol engineering or blockchain infrastructure.
+Individual repositories explain what a project does, its intended audience, current status, source code, and contribution process.
 
-## Application development
+**Need exact technical detail → API / reference**
 
-### [`product-sdk`](https://github.com/paritytech/product-sdk)
+Projects may publish generated API documentation or detailed technical reference material at [paritytech.github.io](https://paritytech.github.io/).
 
-A TypeScript SDK for building applications that interact with Polkadot infrastructure.
+## Key repositories
 
-Product SDK provides typed APIs for chain access, transactions, signing, contracts, storage and host environments.
+### [Polkadot SDK](https://github.com/paritytech/polkadot-sdk)
 
-### [`playground-cli`](https://github.com/paritytech/playground-cli)
+The core SDK for building and maintaining Polkadot-based blockchains and runtimes.
 
-Command-line tooling for creating, building and deploying applications through the Polkadot Playground development environment.
+### [Product SDK](https://github.com/paritytech/product-sdk)
 
-It provides a guided path from initial setup through project creation, development and publication.
+An experimental TypeScript SDK for building applications on Polkadot.
 
-### [`polkadot-rest-api`](https://github.com/paritytech/polkadot-rest-api)
+### [Revive](https://github.com/paritytech/revive)
 
-A REST interface for querying and interacting with Polkadot SDK-based networks.
+Compiler and tooling for running Solidity smart contracts on PolkaVM.
 
-It provides a familiar HTTP-based route for web, backend and integration developers who do not need to work directly with lower-level blockchain APIs.
+### [Smoldot](https://github.com/paritytech/smoldot)
 
-### [`revive`](https://github.com/paritytech/revive)
+A light client for Polkadot SDK-based chains.
 
-Compiler tooling that enables Solidity contracts to target PolkaVM through Polkadot's smart-contract environment.
+## Project status
 
-Start here if you are exploring Solidity development on Polkadot or building tooling around the Solidity-to-PolkaVM compilation path.
+Parity develops both production software and experimental open-source technology.
 
-## Storage and emerging infrastructure
-
-### [`polkadot-bulletin-chain`](https://github.com/paritytech/polkadot-bulletin-chain)
-
-A Polkadot SDK-based chain exploring distributed data storage and retrieval infrastructure.
-
-The repository includes the chain implementation, SDK tooling and examples for working with Bulletin.
-
-### [`web3-storage`](https://github.com/paritytech/web3-storage)
-
-An architecture exploring decentralised storage with independent providers, on-chain coordination and accountability.
-
-## Application environments
-
-### [`host-rust-core`](https://github.com/paritytech/host-rust-core)
-
-Core infrastructure for communication between Polkadot applications and desktop, mobile and browser host environments.
-
-Application developers will normally interact with these capabilities through Product SDK. Developers building hosts, SDK integrations or protocol implementations can work with the underlying host and protocol components directly.
-
-### [`dotli-community`](https://github.com/paritytech/dotli-community)
-
-A browser-based client for resolving and running Polkadot applications without depending on a central application server for application resolution.
-
-## How the pieces fit together
-
-Parity's repositories operate at different layers of the developer stack.
-
-### Protocol and chain infrastructure
-
-[`polkadot-sdk`](https://github.com/paritytech/polkadot-sdk)
-
-Provides the underlying components for building runtimes, chains and protocol infrastructure.
-
-### Developer interfaces and capabilities
-
-[`product-sdk`](https://github.com/paritytech/product-sdk) · [`polkadot-rest-api`](https://github.com/paritytech/polkadot-rest-api) · [`revive`](https://github.com/paritytech/revive) · [`polkadot-bulletin-chain`](https://github.com/paritytech/polkadot-bulletin-chain) · [`web3-storage`](https://github.com/paritytech/web3-storage)
-
-Provide different ways for developers to interact with chains, contracts, storage and other decentralised infrastructure.
-
-### Development and application environments
-
-[`playground-cli`](https://github.com/paritytech/playground-cli) · [`host-rust-core`](https://github.com/paritytech/host-rust-core) · [`dotli-community`](https://github.com/paritytech/dotli-community)
-
-Support how applications are created, connected to host capabilities, published and accessed.
-
-Projects across the Parity organisation are at different stages of development. Check the README and documentation in the relevant repository for current support, compatibility and production-use guidance.
-
-## Working with AI coding assistants
-
-Several Parity repositories include project-specific guidance for AI coding assistants alongside conventional documentation.
-
-Depending on the repository, this may include files such as:
-
-`AGENTS.md` · `CLAUDE.md` · repository-specific skills and development instructions
-
-These files provide additional context about repository architecture, commands, development workflows and common tasks.
-
-AI-generated code should still be validated against the current repository documentation, tests and supported versions.
+Check the status and maturity information in each repository before depending on a project in production.
 
 ## Contributing
 
-Parity develops in the open and contributions are welcome across many of our repositories.
+Parity's software is developed in the open.
 
-Contribution processes differ between projects. Before opening a pull request:
+Contribution instructions, development setup, issues, and project-specific guidance are maintained in the relevant repository.
 
-1. Read the repository README.
-2. Check its contributing guidelines.
-3. Review existing issues and pull requests.
-4. Follow the testing and formatting requirements for that project.
-
-For large or architectural changes, start with the discussion process described by the relevant repository rather than opening an implementation pull request without prior coordination.
-
-## Security
-
-Please do not report security vulnerabilities through public GitHub issues.
-
-If you believe you have discovered a security issue, follow the security reporting instructions provided in the relevant repository.
-
-## About Parity
-
-Parity Technologies is an open-source software company and a core technical contributor to Polkadot.
-
-We build infrastructure, developer tooling and emerging technologies designed to advance a more decentralised web.
-
-Find out more at [parity.io](https://www.parity.io/).
+For security issues, follow the security policy provided by the repository or the Parity organisation.
